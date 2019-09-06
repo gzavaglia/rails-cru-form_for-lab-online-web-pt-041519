@@ -3,4 +3,8 @@ class GenresController < ApplicationController
     @genre = Genre.new
   end
   
+  def new
+    @genre = Genre.new(post_params)
+  end
+  
 end
