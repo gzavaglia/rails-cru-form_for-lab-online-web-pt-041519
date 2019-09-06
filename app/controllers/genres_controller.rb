@@ -4,11 +4,11 @@ class GenresController < ApplicationController
   end
   
   def new
-    @genre =
+    @genre = Genre.new
   end
   
   def create
-    @genre = Genre.new(post_params).
+    @genre = Genre.new(post_params)
     @genre.save
     redirect_to genre_path(@genre)
   end
