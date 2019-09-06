@@ -3,5 +3,7 @@ class ArtistsController < ApplicationController
     @artist = Artist.find_by(params[:id])
   end
   
-  def nw
+  def new
+    @artist = Artist.new
+  end
 end
