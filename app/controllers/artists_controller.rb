@@ -1,5 +1,5 @@
 class ArtistsController < ApplicationController
   def show
-    @artist = 
+    @artist = Artist.find_by(params)
   end
 end
