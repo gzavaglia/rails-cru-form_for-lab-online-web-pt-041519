@@ -1,6 +1,6 @@
 class GenresController < ApplicationController
   def show
-    @genre = Ge
+    @genre = Genre.new
   end
   
 end
